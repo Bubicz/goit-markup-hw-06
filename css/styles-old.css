@@ -530,7 +530,7 @@ img {
   right: 24px;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+  border-radius: 100%;
 
   display: flex;
   align-items: center;
