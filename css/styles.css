@@ -35,6 +35,9 @@ img {
 button {
   cursor: pointer;
 }
+* {
+  box-sizing: border-box;
+}
 
 .visually-hidden {
   position: absolute;
@@ -360,7 +363,7 @@ button {
   max-width: 216px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 
   font-weight: 700;
   font-size: 36px;
@@ -404,7 +407,7 @@ button {
   }
   .title-hero {
     max-width: 496px;
-    padding-bottom: 36px;
+    margin-bottom: 36px;
     font-size: 56px;
     line-height: 1.07;
   }
@@ -435,7 +438,7 @@ button {
       url("../images/hero/piople-ofice\ -d.jpg");
   }
   .title-hero {
-    padding-bottom: 48px;
+    margin-bottom: 48px;
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
@@ -445,5 +448,77 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero/piople-ofice\ -d@2x.jpg");
+  }
+}
+/* feature mobile */
+.section-ethics {
+  padding: 96px 0;
+}
+.ethics-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+}
+.feature-item {
+  width: 100%;
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.feature-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.restangle {
+  display: none;
+}
+
+/* feature tablet */
+@media screen and (min-width: 768px) {
+  .feature-title {
+    text-align: left;
+  }
+  .feature-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+/* feature desktop*/
+@media screen and (min-width: 1158px) {
+  .section-ethics {
+    padding: 120px 0;
+  }
+  .ethics-list {
+    gap: 24px;
+  }
+  .feature-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .restangle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .feature-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .feature-text {
+    font-weight: 400;
+    max-width: 264px;
   }
 }
