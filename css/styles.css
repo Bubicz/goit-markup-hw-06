@@ -535,6 +535,7 @@ button {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
+  text-transform: capitalize;
 }
 .team-list {
   display: flex;
@@ -590,4 +591,59 @@ button {
 }
 .soc-svg {
   fill: #f4f4fd;
+}
+/* team tablet */
+@media screen and (min-width: 768px) {
+  .team-section .container {
+    padding: 96px 108px;
+    max-width: 768px;
+  }
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+  .team-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .social-list-link:hover,
+  .social-list-link:focus {
+    background-color: #404bbf;
+  }
+}
+/* team desktop */
+@media screen and (min-width: 1158px) {
+  .team-section .container {
+    padding: 120px 0px;
+    max-width: 1440px;
+  }
+  .team-list {
+    justify-content: center;
+    gap: 24px;
+  }
+  .team-list-item {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+}
+/* portfolio mobile */
+.portfolio-section .container {
+}
+.portfolio-section {
+  padding: 96px 0;
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
